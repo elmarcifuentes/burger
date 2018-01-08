@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.brand-logo {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.burger-div {
+    text-align: center;
+}
+
+.btn {
+    margin: 5px;
+    background-color: red;
+}
+
+.btn:focus {
+    background-color: black;
+}
+
+.btn:visited {
+    background-color: red;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn:active {
+    background-color: black;
+}
+
+#search-input {
+    font-size: 20px;
+    border-bottom: 1px solid red;
+    -webkit-box-shadow: 0 1px 0 0 red;
+    -moz-box-shadow: 0 1px 0 0 red;
+    box-shadow: 0 2px 0 0 red;
+}
+
+nav {
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+.page-footer {
+	background-color: black;
+	text-align: center;
+	padding-bottom: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col s12">
+        <form action="/burgers" method="POST">
+            <input type="text" id="search-input" name="burger_name" placeholder="Enter a burger you would like to eat">
+            <button type="submit" onClick="return empty()" class="btn waves-effect waves-light">
+                Submit<i class="material-icons right">add_circle_outline</i>
+            </button>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col m6 s12">
+        {{#each burgers}} {{#unless this.devoured}}
+        <div>
+            <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class="btn waves-effect waves-light"> {{this.burger_name}}</button>
+            </form>
+        </div>
+        {{/unless}} {{/each}}
+    </div>
+    <div class="col m6 s12">
+        {{#each burgers}} {{#if this.devoured}}
+        <div>
+            <div class="chip">
+                <img src="/assets/img/icon.png"> {{this.burger_name}}
+            </div>
+        </div>
+        {{/if}} {{/each}}
+    </div>
+</div>

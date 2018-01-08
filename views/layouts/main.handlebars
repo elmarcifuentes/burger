@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Burger</title>
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/burger_style.css">
+    <!-- Material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo">BURGER</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="burger-div"><img src="/assets/img/burger.jpg" width="800px" class="responsive-img"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div>{{{body}}}</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            © 2017 Copyright Text
+        </div>
+    </footer>
+    <script>
+    function empty() {
+        var x;
+        x = document.getElementById("search-input").value;
+        if (x == "") {
+            return false;
+        };
+    }
+    </script>
+</body>
+
+</html>
